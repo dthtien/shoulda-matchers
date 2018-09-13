@@ -4,6 +4,8 @@ Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 Layout/ConditionPosition:
   Enabled: false
+Layout/DotPosition:
+  EnforcedStyle: trailing
 Lint/AmbiguousOperator:
   Enabled: false
 Lint/AmbiguousRegexpLiteral:
@@ -15,6 +17,8 @@ Lint/DeprecatedClassMethods:
 Lint/ElseLayout:
   Enabled: false
 Lint/HandleExceptions:
+  Enabled: false
+Lint/IndentHeredoc:
   Enabled: false
 Lint/LiteralInInterpolation:
   Enabled: false
@@ -28,8 +32,17 @@ Lint/UnderscorePrefixedVariableName:
   Enabled: false
 Lint/Void:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
 Metrics/ClassLength:
   Enabled: false
+Metrics/LineLength:
+  IgnoredPatterns:
+    - "^[ ]*describe.+$"
+    - "^[ ]*context.+$"
+    - "^[ ]*shared_context.+$"
+    - "^[ ]*shared_examples_for.+$"
+    - "^[ ]*it.+$"
 Naming/AccessorMethodName:
   Enabled: false
 Naming/AsciiIdentifiers:
@@ -150,6 +163,12 @@ Style/StringLiterals:
   EnforcedStyle: single_quotes
 Style/SymbolArray:
   Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
 Style/TrivialAccessors:
   Enabled: false
 Style/WhenThen:
