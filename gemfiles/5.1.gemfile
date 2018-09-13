@@ -7,12 +7,13 @@ gem "bundler", "~> 1.1"
 gem "pry"
 gem "pry-byebug"
 gem "rake", "12.3.0"
+gem "rubocop"
 gem "rspec", "~> 3.6"
 gem "zeus", require: false
-gem "yard"
-gem "redcarpet"
-gem "pygments.rb"
 gem "fssm"
+gem "pygments.rb"
+gem "redcarpet"
+gem "yard"
 gem "activerecord-jdbc-adapter", platform: :jruby
 gem "activerecord-jdbcsqlite3-adapter", platform: :jruby
 gem "jdbc-sqlite3", platform: :jruby
